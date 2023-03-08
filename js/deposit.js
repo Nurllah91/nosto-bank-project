@@ -12,7 +12,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
     */
   const previousDepositTotalString = document.getElementById("deposit-total").innerText;
-  const previousDepositTotal = parseInt(previousDepositTotalString);
+  const previousDepositTotal = parseFloat(previousDepositTotalString);
 
   // calculate new deposit total
   const newDepositTotal = previousDepositTotal + newDepositAmount;

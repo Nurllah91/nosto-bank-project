@@ -2,15 +2,15 @@ function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString);
+  document.getElementById(inputFieldId).value = "";
   return inputFieldValue;
-  inputField.value = "";
 }
 
 function getTextElementValueById(elementId) {
   const textElement = document.getElementById(elementId);
   const textElementValueString = textElement.innerText;
-  const textElementValue = textElementValueString;
-  textElementValue;
+  const textElementValue = parseFloat(textElementValueString);
+ return textElementValue;
 }
 
 function setTextElementValueById(elementId, newValue) {
